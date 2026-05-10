@@ -1,0 +1,34 @@
+name: "MeTube"
+version: "1.0.0"
+slug: "metube"
+description: "MeTube is a self-hosted web UI for yt-dlp based on https://github.com/alexta69/metube."
+
+url: "https://github.com/designerferro/hassio-addons"
+
+auto_update: true
+watchdog: http://[HOST]:[PORT:8081]
+
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+
+ingress: true
+ingress_port: 8081
+panel_icon: mdi:download
+webui: http://[HOST]:[PORT:8081]
+
+ports:
+  8081/tcp: null
+
+map:
+  - media:rw
+  - addon_config:rw
+
+options:
+  download_path: /media/metube
+
+schema:
+  download_path: str
