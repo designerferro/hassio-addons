@@ -1,3 +1,3 @@
-Repositório de docker wrappers para home-assistant.
+Personal repository for home-assistant add-ons. (They are now called apps)
 
-Usar por vossa conta e risco.
+Use at your own risk.
