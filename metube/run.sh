@@ -1,10 +1,11 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/sh
 
-CONFIG_PATH=/data/options.json
+if [ -f /data/options.json ]; then
+    DOWNLOAD_PATH=$(jq -r '.download_path // "/downloads"' /data/options.json)
 
-DOWNLOAD_PATH=$(bashio::config 'download_path')
+    export DOWNLOAD_DIR="$DOWNLOAD_PATH"
+    export STATE_DIR="$DOWNLOAD_PATH/.metube"
+    export TEMP_DIR="$DOWNLOAD_PATH"
+fi
 
-export DOWNLOAD_DIR="${DOWNLOAD_PATH}"
-export STATE_DIR="${DOWNLOAD_PATH}/.metube"
-
-exec ./docker-entrypoint.sh
+exec /app/docker-entrypoint.sh
