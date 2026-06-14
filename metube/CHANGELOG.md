@@ -2,6 +2,9 @@
 
 ```md id="d3yv89"
 # Changelog
+## 1.0.3
+- Added PID e GID to configure users.
+
 ## 1.0.2
 - Fix options not being passed to the app.
 
