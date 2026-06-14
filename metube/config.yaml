@@ -29,6 +29,10 @@ map:
 
 options:
   download_path: /media/metube
+  puid: 1000
+  pgid: 1000
 
 schema:
   download_path: str
+  puid: int
+  pgid: int
