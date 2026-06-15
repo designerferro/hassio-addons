@@ -2,6 +2,9 @@
 
 ```md id="d3yv89"
 # Changelog
+## 1.0.6
+- Forced PUID and PGID to be 0 (root)
+
 ## 1.0.5
 - Removed PUID and PGID
 
