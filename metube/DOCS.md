@@ -12,5 +12,3 @@ I recomend mounting the files from a NAS server, using network storage options, 
 
 ```yaml
 download_path: /media/metube
-puid: 1000
-pgid: 1000

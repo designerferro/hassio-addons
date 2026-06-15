@@ -1,5 +1,5 @@
 name: "MeTube"
-version: "1.0.4"
+version: "1.0.5"
 slug: "metube"
 description: "MeTube is a self-hosted web UI for yt-dlp based on https://github.com/alexta69/metube."
 
@@ -29,10 +29,6 @@ map:
 
 options:
   download_path: /media/metube
-  puid: 1000
-  pgid: 1000
 
 schema:
   download_path: str
-  puid: int
-  pgid: int
