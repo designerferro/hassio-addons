@@ -2,6 +2,9 @@
 
 ```md id="d3yv89"
 # Changelog
+## 1.0.4
+- Added debug output to startup
+
 ## 1.0.3
 - Added PID e GID to configure users.
 

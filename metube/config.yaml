@@ -1,5 +1,5 @@
 name: "MeTube"
-version: "1.0.3"
+version: "1.0.4"
 slug: "metube"
 description: "MeTube is a self-hosted web UI for yt-dlp based on https://github.com/alexta69/metube."
 
